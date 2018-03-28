@@ -1,0 +1,112 @@
+#tile-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col {
+  height: 100%;
+  float: left;
+}
+
+#col-1 {
+  background: yellow;
+}
+
+#col-1 .stripe {
+  height: 100%;
+  width: 10%;
+  background: pink;
+  float: left;
+}
+
+#col-1 .stripe:nth-child(2n+0) {
+  background: #faeeb2;
+}
+
+#col-2 {
+  background: red
+}
+
+#col-2 .stripe {
+  height: 2%;
+  width: 100%;
+  background: #fec0d9;
+}
+
+#col-2 .stripe:nth-child(3n+0) {
+  background: #ffffff;
+}
+
+#col-3 {
+  background: blue
+}
+
+#col-3 .stripe {
+  height: 2%;
+  width: 100%;
+  background: #ffffff;
+}
+
+#col-3 .stripe:nth-child(3n+0) {
+  background: #fec0d9;
+}
+
+#col-4 {
+  background: #faeeb2;
+}
+#col-4 .stripe {
+  height: 100%;
+  width: 2%;
+  background: pink;
+  float: left;
+}
+
+#col-4 .stripe:nth-child(2n+0) {
+  background: #faeeb2;
+}
+
+/* CCS @MEDIA SCREEN 4 LATER */
+
+@media screen and (max-width: 2000px) and (min-width: 600px) {
+ #col-1 .stripe:nth-child(2n+0) {
+  background: pink;
+}
+#col-2 .stripe:nth-child(3n+0) {
+  background: pink;
+}
+#col-3 .stripe {
+  height: 2%;
+  width: 100%;
+  background: pink;
+}
+#col-4 .stripe:nth-child(2n+0) {
+  background: pink;
+}
+
+}
+
+/* DON'T DELETE THIS */
+
+#flag-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: red;
+}
+
+html {
+  box-sizing: border-box;
+}
